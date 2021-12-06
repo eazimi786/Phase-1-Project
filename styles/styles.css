@@ -5,9 +5,12 @@ body{
 .card{
     background-color: white;
     width: 400px;
-    float: left;
+    display: inline-block;
 } 
 .upvotes{
     background-color: white;
     display: inline-block;
+    padding-right: 100px;
+    width: 300px;
+    margin-top: 50px;
 }

@@ -32,21 +32,54 @@
         <p>Coffee 3 Description Here</p>
     </div>   
 </div>
+<div> 
+
+</div>
+
 <!-- Upvote Section -->
-<div id='upvote-section'>
+<section id='upvote-section'>
     <div id='upvote-1' class="upvotes">
         <span id='upvote-count-1'>0 Upvotes</span>
-        <button class='upvote-button'>👍</button>
+        <button class='upvote-button'> 🧡</button>
     </div>
     <div id='upvote-2' class="upvotes">
         <span id='upvote-count-2'>0 Upvotes</span>
-        <button class='upvote-button'>👍</button>
+        <button class='upvote-button'> 🧡</button>
     </div>
     <div id='upvote-3' class="upvotes">
         <span id='upvote-count-3'>0 Upvotes</span>
-        <button class='upvote-button'>👍</button>
+        <button class='upvote-button'> 🧡</button>
     </div>
-</div>
+</section>
+
+<!-- form submission section -->
+<section id='add-coffee'>
+    <h3 class='form-title'> Add Your Coffee Creation</h3>
+    <form id='sumbmit-coffee'>
+        <p>Name</p>
+        <input
+        type="text"
+        name="coffee-name"
+        id="name-of-coffee"
+        placeholder="Coffee Name..."
+        />
+        <p>Image</p>
+        <input
+        type="src"
+        name="coffee-img"
+        id="image-of-coffee"
+        placeholder="Picture of Coffee..."
+        />
+        <p>Description</p>
+        <input
+        type="text"
+        name="coffee-description"
+        id="coffee-description"
+        placeholder="Describe Your Coffee..."
+        />
+        <button id="add-button" class='button' type="submit">Add</button>
+    </form>
+</section>
 
 <script type="text/javascript" src="./js/index.js"></script>
 </body>
