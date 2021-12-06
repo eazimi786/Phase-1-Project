@@ -2,3 +2,12 @@ body{
     background-color: aqua;
 
 }
+.card{
+    background-color: white;
+    width: 400px;
+    float: left;
+} 
+.upvotes{
+    background-color: white;
+    display: inline-block;
+}
