@@ -1,5 +1,6 @@
-
-console.log ("coffee")
+// document.addEventListener('DOMContentLoaded', function(){
+// fetchCoffee()
+// })
 
 // function fetchCoffee(){
 // fetch('https://api.sampleapis.com/coffee/hot')

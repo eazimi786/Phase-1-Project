@@ -1,19 +1,51 @@
 body{
     background-color: aqua;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
+header{
+    text-align: center;
+}
+.main-content-container{
+    text-align: center;
+}
+#upvote-section{
+    text-align: center;
+}
 .card{
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 40px;
     background-color: white;
     width: 400px;
     display: inline-block;
+    text-align: center;
 } 
 .upvotes{
     background-color: white;
     display: inline-block;
-    padding-right: 100px;
     width: 300px;
-    margin-top: 50px;
+    margin-top: 20px;
+}
+#upvote-2{
+    margin-left:200px;
+    margin-right: 200px;
 }
 .alter-page{
     display: inline-block;
+    background-color: white;
+    width:400px;
+    text-align: center;
+}
+#comment-section{
+    background-color: white;
+    width: 700px;
+    margin: auto;
+    text-align: center;
+}
+#add-coffee{
+    margin-top: 30px;
+}
+#event-listeners{
+    text-align: center;
 }
