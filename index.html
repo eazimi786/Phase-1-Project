@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>Project 1</title>
+  </head>
+  <body>
+    <section class="main-headings">
+      <h1 class="heading-primary">Cup-O-JavaScript</h1>
+      <h2 class="heading-secondary">
+        Search For Your Favorite Coffee and add it to your list
+      </h2>
+    </section>
+    <section class="gallery">
+      <img src="img/1.jpg" class="gallery-image" />
+      <img src="img/2.jpg" class="gallery-image" />
+      <img src="img/3.jpg" class="gallery-image" />
+    </section>
+    <section class="main">
+      <div class="drink-list">
+        <h3 class="sub-headings">Drink List</h3>
+        <div class="drink-count-controls">
+          <p class="drink-name"><strong>Latte</strong></p>
+          <div>
+            <button class="button">Delete</button>
+            <span class="drink-count">0 Upvotes</span>
+            <button class="button">🧡</button>
+          </div>
+        </div>
+      </div>
+      <form>
+        <h3 class="sub-headings">Add a drink</h3>
+        <p>Name</p>
+        <input
+        type="text"
+        name="coffee-name"
+        id="name-of-coffee"
+        placeholder="Coffee Name..."
+        />
+        <p>Image</p>
+        <input
+        type="src"
+        name="coffee-img"
+        id="image-of-coffee"
+        placeholder="Picture of Coffee..."
+        />
+        <p>Description</p>
+        <input
+        type="text"
+        name="coffee-description"
+        id="coffee-description"
+        placeholder="Describe Your Coffee..."
+        />
+        <button id="add-button" class='button' type="submit">Add</button>
+        </form> 
+        <div class="search-drink">
+          <h3 class="sub-headings">Search Drink</h3>
+          <form id='search-coffee'>
+        <p>Search By Name</p>
+        <input
+        type="text"
+        name="coffee-name"
+        id="name-of-coffee"
+        placeholder="Coffee Name..."
+        />
+        <p>Search By ID</p>
+        <input
+        type="text"
+        name="coffee-id"
+        id="number"
+        placeholder="Coffee ID..."
+        />
+        <button id="search-button" class='button' type="submit"> 🔍 </button>
+        </form>
+        </div>
+    </section>
+    <script src="js/index.js"></script>
+  </body>
+</html>
