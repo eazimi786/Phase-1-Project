@@ -7,8 +7,10 @@ header{
     text-align: center;
     color: rgb(235, 199, 187)
 }
-h1{
+#project-title{
     font-size: 75px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 .main-content-container{
     text-align: center;
