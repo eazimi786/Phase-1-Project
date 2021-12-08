@@ -1,65 +1,64 @@
-body{
-    background-color: rgb(78, 44, 22);
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
+.main-headings {
+  width: 100%;
+  text-align: center;
 }
-header{
-    text-align: center;
-    color: rgb(235, 199, 187);
+
+.heading-primary {
+  margin-top: 10vh;
+  font-size: 55px;
 }
-#project-title{
-    font-size: 75px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+
+.heading-secondary {
+  font-size: 30px;
 }
-.main-content-container{
-    text-align: center;
+
+.gallery {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
 }
-#upvote-section{
-    text-align: center;
+
+.gallery-image {
+  margin-top: 10px;
+  width: 400px;
+  height: 400px;
 }
-.card{
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-top: 40px;
-    background-color: rgb(235, 199, 187);
-    width: 400px;
-    display: inline-block;
-    text-align: center;
-} 
-.upvotes{
-    background-color: rgb(235, 199, 187);
-    display: inline-block;
-    width: 300px;
-    margin-top: 20px;
+
+.main {
+  padding: 30px 200px;
+  min-height: 30vh;
+  background-color: aqua;
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
 }
-#upvote-2{
-    margin-left:200px;
-    margin-right: 200px;
+
+.sub-headings {
+  font-size: 30px;
 }
-.alter-page{
-    display: inline-block;
-    background-color: rgb(235, 199, 187);
-    width:400px;
-    text-align: center;
+
+.drink-name {
+  font-size: 23px;
+  margin-right: 5px;
+  text-align: center;
+  margin-top: 6px;
 }
-#comment-section{
-    background-color: rgb(235, 199, 187);
-    width: 700px;
-    margin: auto;
-    margin-top: 100px;
-    text-align: center;
+
+.drink-count-controls {
+  display: flex;
+  justify-content: space-around;
 }
-#add-coffee{
-    margin-top: 100px;
-    padding-bottom: 10px;
-    margin-right: 160px;
+
+.button {
+  padding: 10px;
+  font-size: 15px;
 }
-#search-coffee{
-    padding-bottom: 10px;
-}
-#event-listeners{
-    text-align: center;
+
+.input-text {
+  padding: 10px;
+  margin-right: 5px;
 }
 li{
     background-color: white;

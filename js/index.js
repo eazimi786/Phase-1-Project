@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', function(){
 fetchHotCoffee()
 fetchIcedCoffee()
@@ -92,4 +93,3 @@ document.querySelector('#comment-form').addEventListener('submit', (e) => {
 })
 
 // Adding Your Own Coffee
-

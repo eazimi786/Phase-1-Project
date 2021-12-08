@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/styles.css">
-    <title>Project_1</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles/styles.css" />
+  <title>Project 1</title>
 </head>
 <body>
-    <header class='header'>
-    <!-- logo here -->
-<img class='logo' src='https://www.freevector.com/uploads/vector/preview/14528/FreeVector-Coffee-Icons-Graphics.jpg' width="200px" height="150px"/>
-<h1 id='project-title' class='project-title'>Cup-O-JavaScript</h1>
-<h2 id='subheader'>Add Your Favorite Coffee Creations and Search For Amazing New Creations</h2>
-    </header>
+  <section class="main-headings">
+    <h1 class="heading-primary">Cup-O-JavaScript</h1>
+    <h2 class="heading-secondary">
+      Search For Your Favorite Coffee and add it to your list
+    </h2>
+  </section>
+  <section class="gallery">
+    <img src="img/1.jpg" class="gallery-image" />
+    <img src="img/2.jpg" class="gallery-image" />
+    <img src="img/3.jpg" class="gallery-image" />
+  </section>
 
 <!-- main content -->
 <div class="main-content-container">
@@ -94,13 +99,10 @@
         placeholder="Describe Your Coffee..."
         />
         <button id="add-button" class='button' type="submit">Add</button>
-    </form>
-</section>
-
-<!-- search section -->
-<section id='search-coffee' class='alter-page'>
-    <h3 class='form-title'> Search For Coffee</h3>
-    <form id='search-coffee'>
+        </form> 
+        <div class="search-drink">
+          <h3 class="sub-headings">Search Drink</h3>
+          <form id='search-coffee'>
         <p>Search By Name</p>
         <input
         type="text"
@@ -134,8 +136,8 @@
           />
           <button class="comment-button" type="submit">Post</button>
         </form>
-    </div>
-
-<script type="text/javascript" src="./js/index.js"></script>
-</body>
+        </div>
+    </section>
+    <script src="js/index.js"></script>
+  </body>
 </html>
