@@ -1,10 +1,14 @@
 body{
-    background-color: aqua;
+    background-color: rgb(78, 44, 22);
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
 header{
     text-align: center;
+    color: rgb(235, 199, 187)
+}
+h1{
+    font-size: 75px;
 }
 .main-content-container{
     text-align: center;
@@ -16,13 +20,13 @@ header{
     margin-left: 40px;
     margin-right: 40px;
     margin-top: 40px;
-    background-color: white;
+    background-color: rgb(235, 199, 187);
     width: 400px;
     display: inline-block;
     text-align: center;
 } 
 .upvotes{
-    background-color: white;
+    background-color: rgb(235, 199, 187);
     display: inline-block;
     width: 300px;
     margin-top: 20px;
@@ -33,12 +37,12 @@ header{
 }
 .alter-page{
     display: inline-block;
-    background-color: white;
+    background-color: rgb(235, 199, 187);
     width:400px;
     text-align: center;
 }
 #comment-section{
-    background-color: white;
+    background-color: rgb(235, 199, 187);
     width: 700px;
     margin: auto;
     margin-top: 100px;
