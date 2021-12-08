@@ -1,4 +1,6 @@
-
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 .main-headings {
   width: 100%;
   text-align: center;
@@ -53,45 +55,113 @@
 }
 li{
     background-color: white;
-    text-align: center;
+    width: 725px;
+    border: 1px solid black
+    
 }
 #coffee-list{
     text-align: center;
-    line-height: 10px;
+    
     margin-top: 100px;
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: rgb(235, 199, 187);
+}
+#hot-coffee-list{
+  display: inline-block;
+  line-height: 10px;
+  padding-left:10px;
+  padding-right: 10px;
+  margin-right: 200px;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: rgb(235, 199, 187);
+  width: 200px;
 }
 #iced-coffee-list{
- padding-top: 20px;
+ display: inline-block;
+ vertical-align: top;
+ padding-left:10px;
+  padding-right: 10px;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: rgb(235, 199, 187);
+  height: 570px;
+  width: 200px;
+  list-style: 15px;
 }
 .font{
     font-size: 20px;
 }
-#main-content-container{
+/* #main-content-container{
   text-align: center;
-}
+} */
 #coffee-card-1{
   text-align: center;
-  width: 400px;
+  width: 300px;
   display: inline-block;
-  padding-left: 150px;
-  padding-top: 80px;
+  margin-left: 200px;
+  margin-top: 80px;
 }
 #coffee-card-2{
   text-align: center;
-  width: 400px;
+  width: 300px;
   display: inline-block;
   vertical-align: top;
   padding-top: 80px;
-  justify-content: space-between;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 #coffee-card-3{
   text-align: center;
-  width: 400px;
+  width: 300px;
   display: inline-block;
   vertical-align: top;
   padding-top: 80px;
 }
 
+#upvote-section{
+  text-align: center;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#upvote-1{
+display: inline-block;
+}
+#upvote-2{
+display: inline-block;
+padding-left: 280px;
+padding-right: 280px;
+}
+
+#upvote-3{
+display: inline-block;
+}
+#forms{
+  text-align: center;
+  margin-bottom: 15px;
+  border: 4px solid rgb(235, 199, 187);
+  border-radius: 10px;
+}
+#add-coffee{
+  display: inline-block;
+  padding-right: 80px;
+}
+#search-drink{
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 80px;
+}
+#search {
+  padding-bottom: 70px;
+}
+#comment-section{
+  background-color: rgb(235, 199, 187);
+  border-radius: 10px;
+  text-align: center;
+  margin-left: 350px;
+  width: 800px;
+}
+img{
+  border-radius: 10px;
+}

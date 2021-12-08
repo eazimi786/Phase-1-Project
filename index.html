@@ -73,10 +73,10 @@
 
 
 <!-- form submission section -->
-<div id='event-listeners'>
-<section id='add-coffee' class='alter-page'>
-    <h3 class='form-title'> Add Your Coffee Creation</h3>
-    <form id='sumbmit-coffee'>
+<section id='forms'>
+    <div id='add-coffee'>
+      <h3 class='sub-headings'> Add Your Coffee Creation</h3>
+      <form id='sumbmit-coffee'>
         <p>Name</p>
         <input
         type="text"
@@ -100,9 +100,11 @@
         />
         <button id="add-button" class='button' type="submit">Add</button>
         </form> 
-        <div class="search-drink">
-          <h3 class="sub-headings">Search Drink</h3>
-          <form id='search-coffee'>
+    </div>
+
+    <div id="search-drink">
+      <h3 id='search' class="sub-headings">Search Coffee List</h3>
+      <form id='search-coffee'>
         <p>Search By Name</p>
         <input
         type="text"
@@ -119,8 +121,14 @@
         />
         <button id="search-button" class='button' type="submit"> 🔍 </button>
     </form>
+    </div>
 </section>
+
+<div id='returned-search'>
+  
 </div>
+
+
     <div id='comment-section'>
         <h2>Comment Your Favorite Coffee Drink</h2>
         <ol id='comments'>
@@ -136,8 +144,7 @@
           />
           <button class="comment-button" type="submit">Post</button>
         </form>
-        </div>
-    </section>
+    </div>
     <script src="js/index.js"></script>
   </body>
 </html>
