@@ -12,7 +12,7 @@
     <!-- logo here -->
 <img class='logo' src='https://www.freevector.com/uploads/vector/preview/14528/FreeVector-Coffee-Icons-Graphics.jpg' width="200px" height="150px"/>
 <h1 id='project-title' class='project-title'>Cup-O-JavaScript</h1>
-<h2>Add Your Favorite Coffee Creations and Search For Amazing New Creations</h2>
+<h2 id='subheader'>Add Your Favorite Coffee Creations and Search For Amazing New Creations</h2>
     </header>
 
 <!-- main content -->
@@ -43,18 +43,29 @@
 <!-- Upvote Section -->
 <section id='upvote-section'>
     <div id='upvote-1' class="upvotes">
-        <span id='upvote-count-1'>0 Upvotes</span>
-        <button class='upvote-button'> 🧡</button>
+        <span id='upvote-count-1' class='upvote-count'>0 Upvotes</span>
+        <button id='button-1'> 🧡</button>
     </div>
     <div id='upvote-2' class="upvotes">
-        <span id='upvote-count-2'>0 Upvotes</span>
-        <button class='upvote-button'> 🧡</button>
+        <span id='upvote-count-2' class='upvote-count'>0 Upvotes</span>
+        <button id='button-2'> 🧡</button>
     </div>
     <div id='upvote-3' class="upvotes">
         <span id='upvote-count-3' class='upvote-count'>0 Upvotes</span>
-        <button class='upvote-button'> 🧡</button>
+        <button id='button-3'> 🧡</button>
     </div>
 </section>
+
+<!-- List of All Coffee -->
+    <section id='coffee-list'>
+        <div id='hot-coffee-list'>
+        <p class='font'> <strong> All Hot Coffee</strong></p>
+        </div>
+        <div id='iced-coffee-list'>
+            <p class='font'> <strong>All Iced Coffee</strong></p>
+        </div>
+    </section>
+
 
 <!-- form submission section -->
 <div id='event-listeners'>
@@ -110,9 +121,9 @@
 </div>
     <div id='comment-section'>
         <h2>Comment Your Favorite Coffee Drink</h2>
-        <ul id='comments'>
+        <ol id='comments'>
 
-        </ul>
+        </ol>
         <form id='comment-form'>
             <input
             class="comment-input"

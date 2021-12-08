@@ -5,7 +5,7 @@ body{
 }
 header{
     text-align: center;
-    color: rgb(235, 199, 187)
+    color: rgb(235, 199, 187);
 }
 #project-title{
     font-size: 75px;
@@ -60,4 +60,26 @@ header{
 }
 #event-listeners{
     text-align: center;
+}
+li{
+    background-color: white;
+    text-align: center;
+}
+#coffee-list{
+    text-align: center;
+    line-height: 10px;
+    margin-top: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(235, 199, 187);
+}
+#iced-coffee-list{
+ padding-top: 20px;
+ 
+}
+#hot-coffee-list{
+   
+}
+.font{
+    font-size: 20px;
 }
