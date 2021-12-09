@@ -46,9 +46,14 @@ li{
 #beer-list{
     text-align: center;
     line-height: 4px;
-    margin-top: 50px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    margin-top: 40px;
+    padding: 15px;
+    margin-bottom: 40px;
+    color: white;
+    background-color: black;
+    width: 400px;
+    border-radius: 15px;
+    margin-left: 530px;
 }
 
 h1{
@@ -149,4 +154,5 @@ img{
   padding: 15px;
   margin-left: 530px;
   border-radius: 10px;
+  margin-bottom: 40px;
 }
