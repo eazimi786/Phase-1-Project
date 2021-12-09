@@ -4,10 +4,11 @@ fetchHotCoffee()
 fetchIcedCoffee()
 fetchAllHotCoffee()
 fetchAllIcedCoffee()
+addCoffee()
 })
 
 function fetchHotCoffee(){
-fetch('https://api.sampleapis.com/coffee/hot')
+fetch('https://api.sampleapis.com/coffee/hot', {mode: 'no-cors'})
 .then(resp => resp.json())
 .then(data => {
     
@@ -24,7 +25,7 @@ fetch('https://api.sampleapis.com/coffee/hot')
 }
 
 function fetchIcedCoffee(){
-fetch('https://api.sampleapis.com/coffee/iced/')
+fetch('https://api.sampleapis.com/coffee/iced/', {mode: 'no-cors'})
 .then(resp => resp.json())
 .then(data => {
    
@@ -36,7 +37,7 @@ fetch('https://api.sampleapis.com/coffee/iced/')
 }
 
 function fetchAllHotCoffee(){
-    fetch('https://api.sampleapis.com/coffee/hot')
+    fetch('https://api.sampleapis.com/coffee/hot', {mode: 'no-cors'})
     .then(resp => resp.json())
     .then(data => {
         data.forEach(obj => {
@@ -48,7 +49,7 @@ function fetchAllHotCoffee(){
     })
 }
 function fetchAllIcedCoffee(){
-    fetch('https://api.sampleapis.com/coffee/iced/')
+    fetch('https://api.sampleapis.com/coffee/iced/', {mode: "no-cors"})
     .then(res => res.json())
     .then(data => {
         data.forEach(obj => {
@@ -93,3 +94,17 @@ document.querySelector('#comment-form').addEventListener('submit', (e) => {
 })
 
 // Adding Your Own Coffee
+
+    document.querySelector('#submit-form').addEventListener('submit', e => {
+        e.preventDefault(); renderCoffee()
+    })
+
+function renderCoffee(title, img, des){
+    let card = document.createElement('div')
+    card.className = 'card'
+    card.innerHTML = `
+    <h2 class='title'> ${title} </h2>
+    <img class='image' src='${img}' height='225px' width='300px' />
+    <p> ${des} </p>`
+    document.querySelector('.main-content-container').append(card)
+}
