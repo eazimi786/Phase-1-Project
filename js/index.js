@@ -1,10 +1,7 @@
 
 document.addEventListener('DOMContentLoaded', function(){
     fetchBeers()
-// fetchHotCoffee()
-// fetchIcedCoffee()
-// fetchAllHotCoffee()
-// fetchAllIcedCoffee()
+    populateList()
 })
 
 // function fetchHotCoffee(){
@@ -62,25 +59,7 @@ document.addEventListener('DOMContentLoaded', function(){
 //     })
 // }
 
-// Likes
-// let likeCountOne = 0;
-// let likeCountTwo = 0;
-// let likeCountThree = 0;
-   
-// document.querySelector('#button-1').addEventListener('click', (e) => {
-//     e.target = likeCountOne++
-//     document.querySelector('#upvote-count-1').textContent = likeCountOne + " Upvotes"
-// })
 
-// document.querySelector('#button-2').addEventListener('click', (e) => {
-//     e.target = likeCountTwo++
-//     document.querySelector('#upvote-count-2').textContent = likeCountTwo + " Upvotes"
-// })
-
-// document.querySelector('#button-3').addEventListener('click', (e) => {
-//     e.target = likeCountThree++
-//     document.querySelector('#upvote-count-3').textContent = likeCountThree + " Upvotes"
-// })
 
 // // Comments - Add and Remove
 // document.querySelector('#comment-form').addEventListener('submit', (e) => {
@@ -110,11 +89,15 @@ document.addEventListener('DOMContentLoaded', function(){
 //     document.querySelector('.main-content-container').append(card)
 // }
 
+
+// Fetch Section
+
+// Retreive Info From API
 function fetchBeers(){
     fetch('https://api.punkapi.com/v2/beers')
     .then(res => res.json())
     .then(data => {
-        console.log(data)
+
         document.querySelector('#beer-title-1').textContent = data[9].name
         document.querySelector('#tagline-1').textContent = data[9].tagline
         document.querySelector('#beer-img-1').src = data[9].image_url
@@ -131,6 +114,24 @@ function fetchBeers(){
         document.querySelector('#description-3').textContent = data[11].description
     })
 }
+
+// Populate the Beer List
+function populateList(){
+    fetch('https://api.punkapi.com/v2/beers')
+    .then(res => res.json())
+    .then(data => {
+        console.log(data)
+        data.forEach(obj => {
+            const p = document.createElement('p')
+            p.className = 'beer'
+            p.textContent = obj.name.toUpperCase()
+            document.querySelector('#beer-list').append(p)
+        })
+    })
+}
+
+
+// User Inferface Section
 
 // Likes
 let likeCountOne = 0;
@@ -150,4 +151,15 @@ document.querySelector('#button-2').addEventListener('click', (e) => {
 document.querySelector('#button-3').addEventListener('click', (e) => {
     e.target = likeCountThree++
     document.querySelector('#upvote-count-3').textContent = likeCountThree + " Upvotes"
+})
+
+// Comments - Add and Remove
+document.querySelector('#comment-form').addEventListener('submit', (e) => {
+    e.preventDefault();
+    const li = document.createElement('li');
+    li.textContent = comment.value
+    document.querySelector('#comments').append(li)
+    li.addEventListener('click', e =>{
+        e.target.remove()
+    })
 })
