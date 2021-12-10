@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function(){
     fetchBeers()
     populateList()
     renderGallery()
+    searchBeer()
 })
 
 // Fetch Section
@@ -35,7 +36,6 @@ function populateList(){
     fetch('https://api.punkapi.com/v2/beers')
     .then(res => res.json())
     .then(data => {
-        console.log(data)
         data.forEach(obj => {
             const p = document.createElement('p')
             p.className = 'beer'
@@ -59,7 +59,30 @@ function renderGallery(){
     })
 }
 
+document.querySelector('#search-beer').addEventListener('submit', e => {
+    e.preventDefault()
+    const value = beer.value
+    searchBeer(value)
+})
 
+function searchBeer(beer){
+fetch('https://api.punkapi.com/v2/beers')
+.then(res => res.json())
+.then(data => {
+    data.forEach(obj => {
+        if (beer === obj.name){
+                const div = document.createElement('div');
+                div.className = 'returned-card'
+                div.innerHTML = `<h2>${obj.name}</h2>
+                <h3>${obj.tagline}</h3>
+                <img src='${obj.image_url}' height='270px' width='80px' />
+                <p>${obj.description}</p>`
+                document.querySelector('#returned-search').append(div)
+        }
+        })
+    })
+}
+        
 // User Inferface Section
 
 // Likes
